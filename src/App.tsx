@@ -1,15 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Home } from './components/home/Home';
-import { Main } from './components/main/Main';
+import { Home } from './paginas/home/Home';
+
+import { Navbar } from './components/estaticos/navbar/Navbar';
+import { Footer } from './components/estaticos/footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-     <Home />
-     <Main />
-    </div>
+    <>
+      <Navbar />
+      <Home />
+      <Footer />
+    </>
   );
 }
 
