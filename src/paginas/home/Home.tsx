@@ -1,24 +1,66 @@
-import {Paper, Box, Button } from "@mui/material"; 
-// Importacao diferente do video 
+import { Typography } from "@material-ui/core";
+import { Box, Button, Grid } from "@mui/material";
+import People  from "../../assets/people1.svg"
+// Importacao diferente do video
 import React from "react";
 
 export function Home() {
   return (
     <>
-      <Paper>
-        <Box p={2}>
-          <Box display="flex" justifyContent="center">
-            <h1>Hello</h1>
-            {/* <img src="https://avatars.githubusercontent.com/u/62892046?v=4" alt=""  
-                style={{width:"30%", height:"30%"}}
-            /> */}
-            <Box display="flex" justifyContent="center" p={2}>
-              <Button variant="contained" color="primary">Click 1</Button>
-              <Button variant="contained" color="secondary" >Click 2</Button>
-            </Box>
+      <Grid
+        container
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        style={{ backgroundColor: "#002642" }}
+      >
+        <Grid alignItems="center" item xs={6}>
+          <Box paddingX={20}>
+            <Typography
+              variant="h3"
+              gutterBottom
+              color="textPrimary"
+              component="h3"
+              align="center"
+              style={{ color: "white", fontWeight: "bold" }}
+            >
+              Seja bem vindo(a)!
+            </Typography>
+            <Typography
+              variant="h5"
+              gutterBottom
+              color="textPrimary"
+              component="h5"
+              align="center"
+              style={{ color: "white", fontWeight: "bold" }}
+            >
+              expresse aqui os seus pensamentos e opiniões!
+            </Typography>
           </Box>
-        </Box>
-      </Paper>
+          <Box display="flex" justifyContent="center">
+            <Box marginRight={1}></Box>
+            <Button
+              variant="outlined"
+              style={{
+                borderColor: "white",
+                backgroundColor: "#115586",
+                color: "white",
+              }}
+            >
+              Ver Postagens
+            </Button>
+          </Box>
+        </Grid>
+        <Grid item xs={6}>
+          <img
+            src={People}
+            alt=""
+            width="500px"
+            height="500px"
+          />
+        </Grid>
+        <Grid xs={12} style={{ backgroundColor: "white" }}></Grid>
+      </Grid>
     </>
-  )
+  );
 }
