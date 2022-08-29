@@ -1,43 +1,48 @@
-import React from 'react';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import SimpleMenu from '../menu/SimpleMenu';
+import React from "react";
+import { AppBar, Toolbar, Typography, Box } from "@material-ui/core";
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
-    },
-  }),
-);
+import './Navbar.css'
 
 export function Navbar() {
-  const classes = useStyles();
-
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar style={{backgroundColor:"#002642"}}>
-          <IconButton edge="start" className={classes.menuButton} aria-label="menu">
-            <SimpleMenu />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            BlogPessoal
-          </Typography>
-          <Button color="inherit">Login</Button>
+    <>
+      <AppBar position="static" className="header-container">
+        <Toolbar variant="dense" >
+          <Box style={{ cursor: "pointer"}}>
+            <Typography variant="h5" color="inherit" className="logo">
+              BlogPessoal
+            </Typography>
+          </Box>
+
+          <Box  display="flex" justifyContent="space-between" className="nav-bar">
+            <Box mx={1} style={{ cursor: "pointer" }}>
+              <Typography variant="h6" color="inherit">
+                Home
+              </Typography>
+            </Box>
+            <Box mx={1} style={{ cursor: "pointer" }}>
+              <Typography variant="h6" color="inherit">
+                Postagens
+              </Typography>
+            </Box>
+            <Box mx={1} style={{ cursor: "pointer" }}>
+              <Typography variant="h6" color="inherit">
+                Temas
+              </Typography>
+            </Box>
+            <Box mx={1} style={{ cursor: "pointer" }}>
+              <Typography variant="h6" color="inherit">
+                Cadastrar Tema
+              </Typography>
+            </Box>
+            <Box mx={1} style={{ cursor: "pointer" }} className="login ">
+              <Typography variant="h6" color="inherit">
+                Login
+              </Typography>
+            </Box>
+          </Box>
         </Toolbar>
       </AppBar>
-    </div>
+    </>
   );
 }
-

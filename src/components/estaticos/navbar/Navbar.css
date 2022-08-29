@@ -1,0 +1,14 @@
+.header-container {
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.MuiToolbar-root {
+  background-color: #002642;
+}
+
+.logo {
+  font-weight: bold !important;
+  margin: 0 2rem!important;
+
+}
