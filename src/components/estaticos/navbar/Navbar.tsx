@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import SimpleMenu from '../menu/SimpleMenu';
 
+import './Navbar.css'
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -27,7 +29,7 @@ export function Navbar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar style={{backgroundColor:"#002642"}}>
+        <Toolbar style={{backgroundColor:"#002642"}} className="header">
           <IconButton edge="start" className={classes.menuButton} aria-label="menu">
             <SimpleMenu />
           </IconButton>
