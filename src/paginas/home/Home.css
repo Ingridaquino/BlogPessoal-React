@@ -1,14 +1,15 @@
 .box-grid {
-  background-color:#002642  !important;
+  background-color: var(--blue-900)!important;
 }
 
 .typography {
-  color: white;
+  color: var(--white);
   font-weight: bold;
 }
 
 .button-box {
-  border-color: #115586  !important;
-  background-color:transparent !important;
-  color: white;
+  border-color: var(--blue-700)!important;
+  background-color: transparent !important;
+  color: var(--white)!important;
+  margin-top: 1rem !important;
 }

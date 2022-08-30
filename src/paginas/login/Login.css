@@ -1,22 +1,27 @@
- .MuiTypography-h3 {
-  color:#115586 !important;
+ .text-enter {
+  color:var(--blue-900) !important;
   text-align: center !important;
-  font-weight: bold;
-  margin-top: 2rem;
+  font-weight: bold !important;
  }
 
 
- .MuiButton-root {
-  background-color:#115586 !important;
-  color: white !important;
- }
+ .button-login {
+  background-color: transparent !important;
+  font-weight: bold !important;
+  
+  border: 1px solid var(--blue-900 )!important;
+}
 
- .grid-image {
+.grid-image {
   background-repeat: no-repeat;
   width: 100vh;
   min-height: 100vh;
   background-size: cove;
   background-position: center;
   background-image: url(../../assets/login.svg) !important;
-  background-color: #115586 !important;
- }
+  background-color: var(--blue-700) !important;
+}
+
+.color-text {
+  color: var(--blue-900) !important;
+}

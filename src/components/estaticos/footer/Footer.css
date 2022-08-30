@@ -1,0 +1,12 @@
+.box-pai {
+  background-color: var(--blue-900) ;
+  height: 120px;
+}
+.color {
+  color: var(--white) !important;
+}
+
+.icon-social {
+  font-size: 40px  !important;
+  color: var(--white) !important;
+}

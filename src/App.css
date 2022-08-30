@@ -1,10 +1,18 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+:root {
+  --blue-900: #002642;
+  --blue-700: #115586 ;
+  --white: rgb(237, 235, 235);
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-}
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+  }

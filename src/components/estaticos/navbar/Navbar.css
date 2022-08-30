@@ -9,7 +9,7 @@
 }
 
 .MuiToolbar-root {
-  background-color: #002642;
+  background-color: var(--blue-900);
 }
 
 .logo {
@@ -20,5 +20,5 @@
 
 .text-decorator-none {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
