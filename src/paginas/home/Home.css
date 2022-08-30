@@ -1,0 +1,14 @@
+.box-grid {
+  background-color:#002642  !important;
+}
+
+.typography {
+  color: white;
+  font-weight: bold;
+}
+
+.button-box {
+  border-color: #115586  !important;
+  background-color:transparent !important;
+  color: white;
+}

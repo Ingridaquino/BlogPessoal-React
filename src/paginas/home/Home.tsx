@@ -1,10 +1,13 @@
 import { Typography } from "@material-ui/core";
 import { Box, Button, Grid } from "@mui/material";
-import People  from "../../assets/people1.svg"
+import People  from "../../assets/people1.svg";
+
 // Importacao diferente do video
 import React from "react";
 
-export function Home() {
+import './Home.css'
+
+function Home() {
   return (
     <>
       <Grid
@@ -12,27 +15,25 @@ export function Home() {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        style={{ backgroundColor: "#002642" }}
+        className="box-grid"
       >
         <Grid alignItems="center" item xs={6}>
           <Box paddingX={20}>
             <Typography
               variant="h3"
               gutterBottom
-              color="textPrimary"
               component="h3"
               align="center"
-              style={{ color: "white", fontWeight: "bold" }}
+              className="typography"
             >
               Seja bem vindo(a)!
             </Typography>
             <Typography
               variant="h5"
               gutterBottom
-              color="textPrimary"
               component="h5"
               align="center"
-              style={{ color: "white", fontWeight: "bold" }}
+              className="typography"
             >
               expresse aqui os seus pensamentos e opiniões!
             </Typography>
@@ -41,11 +42,7 @@ export function Home() {
             <Box marginRight={1}></Box>
             <Button
               variant="outlined"
-              style={{
-                borderColor: "white",
-                backgroundColor: "#115586",
-                color: "white",
-              }}
+             className="button-box"
             >
               Ver Postagens
             </Button>
@@ -64,3 +61,5 @@ export function Home() {
     </>
   );
 }
+
+export default Home;
