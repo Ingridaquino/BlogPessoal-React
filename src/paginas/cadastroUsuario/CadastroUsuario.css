@@ -1,0 +1,33 @@
+.text-cadastrar {
+  color: var(--blue-900) !important;
+  text-align: center;
+  font-weight: bold !important;
+}
+
+.grid-image2 {
+  background-repeat: no-repeat;
+  width: 100vh;
+  min-height: 100vh;
+  background-size: cove;
+  background-position: center;
+  /* background-image: url(../../assets/login.svg) !important; */
+  /* background-color: var(--blue-700) !important; */
+}
+
+.grid-form form {
+  padding: 10rem !important;
+}
+
+
+.button-canc {
+  background-color: rgb(207, 22, 22) !important;
+  color: var(--white) !important;
+  font-weight: 700 !important;
+  margin-right: 20px !important;
+}
+
+.button-cadastrar  {
+  background-color: var(--blue-700) !important;
+  color: var(--white) !important;
+  font-weight: 700 !important;
+}

@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid,  Typography } from "@mui/material";
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -38,6 +38,7 @@ export function Footer() {
                     </Box>
                 </Grid>
             </Grid>
+            
     </>
   )
 }

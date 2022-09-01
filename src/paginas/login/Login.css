@@ -10,6 +10,7 @@
   font-weight: bold !important;
   
   border: 1px solid var(--blue-900 )!important;
+  margin: 1rem 0 2rem 0 !important;  
 }
 
 .grid-image {
@@ -25,3 +26,5 @@
 .color-text {
   color: var(--blue-900) !important;
 }
+
+ 
