@@ -10,10 +10,10 @@ function CadastroUsuario() {
       <Grid alignItems='center' className='grid-form' xs={6} >
         <form>
           <Typography variant="h3" gutterBottom component="h3" className="text-cadastrar"> Cadastrar </Typography>
-          <TextField  id="nome" label="nome" variant="outlined" name="nome" margin="normal" fullWidth/>
-          <TextField  id="usuario" label="usuario" variant="outlined" name="usuario" margin="normal" fullWidth/>
-          <TextField  id="senha" label="senha" variant="outlined" name="senha" margin="normal" type='password' fullWidth/>
-          <TextField  id="confirmarSenha" label="confirmarSenha" variant="outlined" name="confirmarSenha" margin="normal"  type='password' fullWidth/>
+          <TextField  id="nome" label="nome" variant="outlined"  type='name' name="nome" margin="normal" fullWidth/>
+          <TextField  id="usuario" label="usuario" variant="outlined" type='usuario'  name="usuario" margin="normal" fullWidth/>
+          <TextField  id="senha" label="senha" variant="outlined"  name="senha" margin="normal" type='password' fullWidth/>
+          <TextField  id="confirmarSenha" label="confirmarSenha" variant="outlined"  name="confirmarSenha" margin="normal"  type='password' fullWidth/>
           <Box marginTop={2} textAlign='center'>
           <Link to='/' className="text-decorator-name">
             <Button variant="contained" className="button-canc color-text"> 
