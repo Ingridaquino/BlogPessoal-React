@@ -6,6 +6,7 @@ import People from "../../assets/people1.svg";
 import React from "react";
 
 import "./Home.css";
+import TabPostagem from "../../components/postagens/tabPostagens/TabPostagem";
 
 function Home() {
   return (
@@ -48,7 +49,9 @@ function Home() {
         <Grid item xs={6}>
           <img src={People} alt="" width="500px" height="500px" />
         </Grid>
-        <Grid xs={12} style={{ backgroundColor: "white" }}></Grid>
+        <Grid xs={12} style={{ backgroundColor: "white" }}>
+          <TabPostagem />
+        </Grid>
       </Grid>
     </>
   );

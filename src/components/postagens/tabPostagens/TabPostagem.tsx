@@ -7,6 +7,7 @@ import ListaPostagem from '../listaPostagens/ListaPostagem';
 
 
 function TabPostagem() {
+    //funcao para mudar de todas as postagens (1) para sobre nos (2)
     const [value, setValue] = useState('1')
     function handleChange(event: React.ChangeEvent<{}>, newValue: string){
         setValue(newValue);
