@@ -1,7 +1,7 @@
 import { Button, Grid, TextField, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
 
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import useLocalStorage from "react-use-localstorage";
 
@@ -13,7 +13,7 @@ function Login() {
 
      // redireciona o usuário para determinada pagina
      // se o login estiver ok
-     let history = useNavigate()
+     let navigate = useNavigate()
 
      // hooks que vão manipular o nosso Local Storage para gravar o Token
      const [token, setToken] = useLocalStorage('token')
@@ -31,10 +31,18 @@ function Login() {
     // função que junto com a setUserLogin irá atualizar o valor inicial da userLogin 
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
         setUserLogin({
-            ...userLogin,
+            ...userLogin,  //spread operator ... -> "espalha" os atributos
             [e.target.name] : e.target.value
         })
       }
+
+
+      useEffect(() => {
+          if(token !== '') {
+            navigate('/home')
+          }
+      },[token])
+
 
       async function onSubmit( e: ChangeEvent<HTMLFormElement>) {
           e.preventDefault();
@@ -59,7 +67,7 @@ function Login() {
 
         <Grid alignItems="center" xs={6}>
           <Box paddingX={20}>
-            <form>
+            <form onSubmit={onSubmit}>
                 <Typography variant="h3" gutterBottom component="h3" className="text-enter"> Entrar </Typography>
                       {/* VALUE={userLogin.usuario} (como se estivesse vinculando o model com o input) e no onchange  */}
                 <TextField  value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="usuário" variant="outlined" name="usuario" margin="normal" fullWidth/>
@@ -69,7 +77,6 @@ function Login() {
                       Logar
                     </Button>
                 </Box>
-                    <span className="line-before"></span>
             </form>
 
             <Box display='flex' justifyContent='center' marginTop={2}>
