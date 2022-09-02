@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import useLocalStorage from "react-use-localstorage";
 
 import UserLogin from "../../models/UserLogin";
-import { api } from "../../services/Services";
+import { login } from "../../services/Services";
 import "./Login.css";
 
 function Login() {
@@ -48,9 +48,7 @@ function Login() {
           e.preventDefault();
 
           try{ // tentativa
-              const resposta = await api.post(`/usuarios/logar`, userLogin)
-              setToken(resposta.data.token)
-
+              await login(`/usuarios/logar`, userLogin, setToken)
               alert('Usuário logado com sucesso! ');
           } catch(error){ // caso de erro, tente esse
               alert('Usuário não existe. Erro ao logar!!');
