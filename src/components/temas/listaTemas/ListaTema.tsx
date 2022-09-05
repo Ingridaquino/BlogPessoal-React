@@ -13,7 +13,7 @@ function ListaTema() {
             <Typography color="textSecondary" gutterBottom>
               Tema
             </Typography>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h5" component="h5">
               Minha descrição
             </Typography>
           </CardContent>

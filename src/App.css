@@ -20,10 +20,10 @@
 
   .no-found {
     min-height: 100vh;
-    background-image: url(./assets/nofound.svg);
+    background-image: url(./assets/nofound2.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 20%;
+    background-size: 30%;
   }
 
   .no-found p {

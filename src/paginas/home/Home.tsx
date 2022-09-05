@@ -45,14 +45,19 @@ function Home() {
               Ver Postagens
             </Button>
           </Box>
+ 
         </Grid>
+        
         <Grid item xs={6}>
           <img src={People} alt="" width="500px" height="500px" />
         </Grid>
+        
+
+      </Grid>
         <Grid xs={12} style={{ backgroundColor: "white" }}>
           <TabPostagem />
         </Grid>
-      </Grid>
+
     </>
   );
 }
