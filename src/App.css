@@ -16,3 +16,19 @@
     width: 100%;
     height: 100vh;
   }
+
+
+  .no-found {
+    min-height: 100vh;
+    background-image: url(./assets/nofound.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+  }
+
+  .no-found p {
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem 0 0 0;
+    color: var(--blue-900);
+  }

@@ -8,7 +8,7 @@ function ListaPostagem() {
   return (
     <>
       <Box m={2} >
-        <Card variant="outlined">
+        <Card variant="outlined"> 
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Postagens

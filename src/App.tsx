@@ -26,6 +26,15 @@ function App() {
           <Route path="/temas" element={<ListaTema />} />
           <Route path="/posts" element={<ListaPostagem />} />
 
+          <Route
+            path="*"
+            element={
+             <main className="no-found">
+              <p>There's nothing here!</p>
+              </main>
+            }
+          />
+
         </Routes>
       </div>
 
