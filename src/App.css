@@ -17,7 +17,20 @@
     height: 100vh;
   }
 
+  /* scroll estilizado */
 
+  ::-webkit-scrollbar {
+    background-color: var(--blue-700);
+    width: 0.7rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--blue-900);
+    border-radius: 0.4rem;
+  }
+
+
+  /* //Pagina não encontrada */
   .no-found {
     min-height: 100vh;
     background-image: url(./assets/nofound2.svg);
