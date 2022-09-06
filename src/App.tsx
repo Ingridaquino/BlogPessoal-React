@@ -9,6 +9,10 @@ import Login from "./paginas/login/Login";
 import CadastroUsuario from "./paginas/cadastroUsuario/CadastroUsuario";
 import ListaTema from "./components/temas/listaTemas/ListaTema";
 import ListaPostagem from "./components/postagens/listaPostagens/ListaPostagem";
+import CadastroPost from "./components/postagens/cadastroPost/CadastroPost";
+import CadastroTema from "./components/temas/cadastroTema/CadastrarTema";
+import DeletarPost from "./components/postagens/deletarPost/DeletarPost";
+import DeletarTema from "./components/temas/deletarTema/DeletarTema";
 
 
 
@@ -35,9 +39,24 @@ function App() {
             }
           />
 
+          {/* Rotas de deletar e cadastrar */}
+
+          <Route path="/formularioPostagem/" element={<CadastroPost/>} />
+          <Route path="/formularioPostagem/:id" element={<CadastroPost/>} />
+
+          <Route path="/formularioTema/" element={<CadastroTema/>} />
+          <Route path="/formularioTema/:id" element={<CadastroTema/>} />
+
+          <Route path="/formularioPostagem/:id" element={<DeletarPost/>} />
+          <Route path="/formularioTema/:id" element={<DeletarTema/>} />
+
+
+
+
+
         </Routes>
       </div>
-
+ 
       <Footer />
     </Router>
   );
