@@ -13,14 +13,21 @@
   margin: 1rem 0 2rem 0 !important;  
 }
 
+
 .grid-image {
   background-repeat: no-repeat;
   width: 100vh;
   min-height: 100vh;
-  background-size: cove;
   background-position: center;
   background-image: url(../../assets/login.svg) !important;
-  background-color: var(--blue-700) !important;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  /* background-color: var(--blue-700) !important; */
+}
+
+.box-form {
+  margin-top: 4rem !important;
 }
 
 .color-text {

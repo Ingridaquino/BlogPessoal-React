@@ -25,9 +25,9 @@ export function Navbar() {
     <>
       <AppBar position="static" className="header-container">
         <Toolbar variant="dense" >
-          <Box className="cursor">
+          <Box className="cursor" paddingX={20} paddingY={3}>
             <Typography variant="h5" color="inherit" className="logo">
-              BlogPessoal
+            &lt; Ingrid Aquino /&gt;
             </Typography>
           </Box>
 
@@ -64,7 +64,7 @@ export function Navbar() {
               </Box>           
             </Link>
 
-              <Box mx={1}  className="login cursor" onClick={goLogout}>
+              <Box mx={1}  className="login cursor" onClick={goLogout} paddingX={3}>
                 <Typography variant="h6" color="inherit">
                   Logout
                 </Typography>

@@ -1,5 +1,6 @@
 .box-grid {
   background-color: var(--blue-900)!important;
+
 }
 
 .typography {
@@ -13,3 +14,4 @@
   color: var(--white)!important;
   margin-top: 1rem !important;
 }
+

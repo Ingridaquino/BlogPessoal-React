@@ -52,7 +52,6 @@ function Home() {
           <img src={People} alt="" width="500px" height="500px" />
         </Grid>
         
-
       </Grid>
         <Grid xs={12} style={{ backgroundColor: "white" }}>
           <TabPostagem />

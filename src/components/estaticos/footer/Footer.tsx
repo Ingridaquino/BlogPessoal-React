@@ -10,8 +10,8 @@ export function Footer() {
     <>
     <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={12}>
-                    <Box className="color box-pai"  >
-                        <Box paddingTop={2} display="flex" alignItems="center" justifyContent="center">
+                    <Box className="color box-pai" paddingY={4} >
+                        <Box  display="flex" alignItems="center" justifyContent="center">
                             <Typography variant="h5" align="center" gutterBottom className="color" >Siga-nos nas redes sociais </Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
@@ -26,11 +26,11 @@ export function Footer() {
                             </a>
                         </Box>
                     </Box>
-                    <Box style={{ backgroundColor: "#115586", height: "60px" }}>
-                        <Box paddingTop={1}>
+                    <Box paddingY={2} style={{ backgroundColor: "#115586", height: "70px" }}>
+                        <Box>
                             <Typography variant="subtitle2" align="center" gutterBottom className="color" >© 2020 Copyright:</Typography>
                         </Box>
-                        <Box>
+                        <Box >
                             <a target="_blank" href="https://brasil.generation.org" rel="noopener noreferrer">
                                 <Typography variant="subtitle2" gutterBottom className="color" align="center">brasil.generation.org</Typography>
                             </a>
