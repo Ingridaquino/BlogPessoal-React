@@ -34,3 +34,9 @@
   color: var(--blue-900) !important;
 }
  
+
+@media(max-width: 698px) {
+  .conta {
+      font-size: 12px !important;
+  }
+}

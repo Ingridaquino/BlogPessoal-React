@@ -75,9 +75,9 @@ function Login() {
                 </Box>
             </form>
 
-            <Box display='flex' justifyContent='center' marginTop={2}>
+            <Box display='flex' flexWrap='wrap' justifyContent='center' marginTop={2}>
               <Box marginRight={1}>
-                <Typography variant="subtitle1" gutterBottom align="center" className="color-text">Não tem uma conta?</Typography>
+                <Typography variant="subtitle1" gutterBottom align="center" className="color-text conta">Não tem uma conta?</Typography>
               </Box>
 
               <Link to='/cadastrousuario' className="text-decorator-none">
