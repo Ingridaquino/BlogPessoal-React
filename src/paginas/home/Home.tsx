@@ -3,12 +3,27 @@ import { Box, Button, Grid } from "@mui/material";
 import People from "../../assets/people1.svg";
 
 // Importacao diferente do video
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./Home.css";
 import TabPostagem from "../../components/postagens/tabPostagens/TabPostagem";
+import ModalPostagem from "../../components/postagens/modalPostagem/ModalPostagem";
+import { useNavigate } from "react-router-dom";
+import useLocalStorage from "react-use-localstorage";
 
 function Home() {
+
+  let navigate = useNavigate();
+  const [token, setToken] = useLocalStorage('token');
+
+  useEffect(() => {
+      if (token === "") {
+          alert("Você precisa estar logado")
+          navigate("/login")
+      }
+  }, [token])
+
+
   return (
     <>
       <Grid
@@ -40,7 +55,9 @@ function Home() {
             </Typography>
           </Box>
           <Box display="flex" justifyContent="center">
-            <Box marginRight={1}></Box>
+            <Box marginRight={2} className="modalPost">
+              <ModalPostagem />
+            </Box>
             <Button variant="outlined" className="button-box">
               Ver Postagens
             </Button>

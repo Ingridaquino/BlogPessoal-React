@@ -15,3 +15,8 @@
   margin-top: 1rem !important;
 }
 
+.modalPost {
+  margin-top: 1rem !important;
+  border-color: var(--blue-700)!important;
+
+}

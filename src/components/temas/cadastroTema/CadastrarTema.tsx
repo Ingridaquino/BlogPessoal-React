@@ -75,7 +75,7 @@ function CadastroTema() {
                 alert('Tema atualizado com sucesso');
         // CATCH: Caso tenha algum erro, pegue esse erro e mande uma msg para o usuário
             } catch(error) {
-                console.log(`Error: ${error}`)
+                // console.log(`Error: ${error}`)
                 alert("Erro, por favor verifique a quantidade minima de caracteres")
             }
             

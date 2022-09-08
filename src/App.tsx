@@ -51,9 +51,6 @@ function App() {
           <Route path="/deletarTema/:id" element={<DeletarTema/>} />
 
 
-
-
-
         </Routes>
       </div>
  

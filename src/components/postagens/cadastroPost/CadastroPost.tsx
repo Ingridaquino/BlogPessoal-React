@@ -42,6 +42,7 @@ function CadastroPost() {
             id: 1,
             nome: '',
             usuario: '',
+            foto: '',
             senha: ''
         }
     })
