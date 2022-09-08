@@ -1,20 +1,21 @@
+
 .cursor {
   cursor: pointer;
+  padding: 3px !important;
 }
 
 
 .header-container {
-  display: flex;
+  display: flex !important;
   justify-content: space-between !important;
+  width: 100% !important;
+  background-color: var(--blue-900) !important;
 }
 
-.MuiToolbar-root {
-  background-color: var(--blue-900);
-}
 
 .logo {
   font-weight: bold !important;
-  margin: 0 2rem!important;
+  margin: 0 3px !important;
 
 }
 
@@ -22,3 +23,21 @@
   text-decoration: none;
   color: var(--white);
 }
+
+
+@media(max-width: 878px) {
+  .nav-bar {
+    padding: 0.677rem !important;
+    /* display: none !important; */
+  }
+
+  .logo {
+    font-size: 1rem !important;
+  }
+
+  .tituloNav {
+    padding: 0 !important;
+    font-size: 1rem !important;
+  }
+}
+

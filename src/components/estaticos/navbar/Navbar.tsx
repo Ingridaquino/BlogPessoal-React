@@ -24,17 +24,17 @@ export function Navbar() {
   return (
     <>
       <AppBar position="static" className="header-container" >
-        <Toolbar variant="dense"  >
-          <Box className="cursor" paddingX={2} paddingY={4}>
+        <Toolbar variant="dense" className="header-container" >
+          <Box className="cursor">
             <Typography variant="h5" color="inherit" className="logo" >
-            &lt; Ingrid Aquino /&gt;
+            &lt;Ingrid Aquino/&gt;
             </Typography>
           </Box>
 
-          <Box  display="flex" justifyContent="space-between" className="nav-bar">
+          <Box  display="flex"  className="nav-bar">
             <Link to="/home" className="text-decorator-none">
               <Box mx={1}  className="cursor">
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit" className="tituloNav">
                   Home
                 </Typography>
               </Box>
@@ -42,7 +42,7 @@ export function Navbar() {
 
             <Link to="/posts" className="text-decorator-none">
               <Box mx={1} className="cursor">
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit" className="tituloNav">
                   Postagens
                 </Typography>
               </Box>         
@@ -50,7 +50,7 @@ export function Navbar() {
 
             <Link to="/temas" className="text-decorator-none">
               <Box mx={1} className="cursor">
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit" className="tituloNav">
                   Temas
                 </Typography>
               </Box>
@@ -58,14 +58,14 @@ export function Navbar() {
 
             <Link to="/formularioTema" className="text-decorator-none">
               <Box mx={1} className="cursor">
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit" className="tituloNav">
                   Cadastrar Tema
                 </Typography>
               </Box>           
             </Link>
 
-              <Box mx={1}  className="login cursor" onClick={goLogout} paddingX={3}>
-                <Typography variant="h6" color="inherit">
+              <Box mx={1}  className="login cursor" onClick={goLogout} paddingX={10}>
+                <Typography variant="h6" color="inherit" className="tituloNav">
                   Logout
                 </Typography>
               </Box>

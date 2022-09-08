@@ -60,14 +60,14 @@ function Login() {
 
 
   return (
-     <Grid container direction="row" justifyContent="center" alignItems="center" className="grid-image"> 
-       <Grid alignItems="center" xs={6} >
+     <Grid container direction="row" justifyContent="center" alignItems="center" className="grid-image" sm={12} xs={12}> 
+       <Grid alignItems="center"  md={9} sm={9} xs={12} >
           <Box paddingX={20} className="box-form">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" gutterBottom component="h3" className="text-enter"> Entrar </Typography>
                       {/* VALUE={userLogin.usuario} (como se estivesse vinculando o model com o input) e no onchange  */}
                 <TextField  value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="usuário" variant="outlined" name="usuario" margin="normal" fullWidth/>
-                <TextField  value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>)=> updatedModel(e)} id="senha" label="senha" variant="outlined" name="senha" margin="normal" type='password'                                                                 fullWidth/>
+                <TextField  value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>)=> updatedModel(e)} id="senha" label="senha" variant="outlined" name="senha" margin="normal" type='password' fullWidth/>
                 <Box marginTop={2} textAlign='center'>
                     <Button type="submit" variant="contained" className="button-login color-text"> 
                       Logar
