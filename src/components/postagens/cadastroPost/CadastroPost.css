@@ -1,3 +1,13 @@
 .topo{
   margin-top: 20px;
+  padding: 2rem 4rem !important;
+}
+
+
+
+.btnModal {
+  background-color: var(--blue-700)!important;
+  border: var(--blue-900) !important;
+  color: var(--white) !important;
+
 }

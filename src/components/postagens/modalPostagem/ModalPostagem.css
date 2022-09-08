@@ -3,6 +3,6 @@
 }
 
 .btnModal {
-  border-color: white !important;
-  background-color: white !important;
+  border-color: var(--blue-700) !important;
+  background-color: var(--blue-900) !important;
 }

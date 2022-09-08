@@ -1,9 +1,13 @@
+.tabText {
+  background-color: var(--blue-700) !important;
+}
+
 .titulo {
   color: var(--blue-900) !important;
   margin: 3rem 0 2rem 0 !important;
   font-weight: bold !important;
 }
 
-.text-sobre {
-  text-align: center !important;
+.textSobre {
+  padding: 2rem 3rem !important;
 }

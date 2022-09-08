@@ -17,15 +17,36 @@
 }
 
 
+
 .button-canc {
   background-color: rgb(207, 22, 22) !important;
   color: var(--white) !important;
   font-weight: 700 !important;
   margin-right: 20px !important;
+  width: 100px !important;
 }
 
 .button-cadastrar  {
   background-color: var(--blue-700) !important;
   color: var(--white) !important;
   font-weight: 700 !important;
+  width: 100px !important;
+
+}
+
+
+
+@media(max-width: 676px) {
+  .button-canc {
+    margin-bottom: 1rem;
+    justify-items: center;  
+    width: 150px !important;
+    margin-right: 0px !important;
+  }
+
+  .button-cadastrar {
+    margin: 0 auto !important;
+    width: 150px !important;
+
+  }
 }

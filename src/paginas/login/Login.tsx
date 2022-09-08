@@ -61,7 +61,7 @@ function Login() {
 
   return (
      <Grid container direction="row" justifyContent="center" alignItems="center" className="grid-image"> 
-       <Grid alignItems="center" xs={4} >
+       <Grid alignItems="center" xs={6} >
           <Box paddingX={20} className="box-form">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" gutterBottom component="h3" className="text-enter"> Entrar </Typography>
