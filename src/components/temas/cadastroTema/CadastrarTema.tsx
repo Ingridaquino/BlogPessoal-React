@@ -13,6 +13,7 @@ function CadastroTema() {
   let navigate = useNavigate();
 
   //captura o id na ba
+  //serve para capturar parametros enviados por uma url
   const { id } = useParams<{id: string}>();
 
   const [token, setToken] = useLocalStorage('token');
@@ -82,7 +83,7 @@ function CadastroTema() {
         } else {
              // TRY: Tenta executar o cadastro
             try{
-                post(`/temas`, tema, setTema, {
+                await post(`/temas`, tema, setTema, {
                     headers: {
                         'Authorization': token
                     }

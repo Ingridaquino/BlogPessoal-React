@@ -47,7 +47,7 @@ export const post = async(url: any, dados: any, setDados: any, header: any) => {
 //atualizar os dados, passar o token para verifcar se o usuario está logado
 export const put = async(url: any, dados: any, setDados: any, header: any) => {
     const resposta = await api.put(url, dados, header)
-    setDados(resposta.data.token)
+    setDados(resposta.data)
 }
 
 //para deletar o tema ou a postagem
