@@ -51,7 +51,7 @@ function DeletarTema() {
     navigate('/temas')
 
     try {
-     await deleteId(`/tema/${id}`, {
+     await deleteId(`/temas/${id}`, {
         headers: {
           'Authorization': token
         }
