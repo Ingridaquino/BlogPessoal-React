@@ -11,17 +11,20 @@ function CadastroPost() {
 
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
+    //
     const [temas, setTemas] = useState<Tema[]>([])
     const [token, setToken] = useLocalStorage('token');
 
     useEffect(() => {
-        if (token == "") {
+        if (token === "") {
             alert("Você precisa estar logado")
             navigate("/login")
         }
     }, [token])
 
 
+
+    //armazene um tema especifico 
     const [tema, setTema] = useState<Tema>(
         {
             id: 0,
@@ -29,6 +32,7 @@ function CadastroPost() {
         })
 
 
+        //efetuar o cadastro da postagem
     const [postagem, setPostagem] = useState<Postagem>({
         id: 0,
         titulo: '',
@@ -50,7 +54,7 @@ function CadastroPost() {
         })
     }, [tema])
 
-    
+
     useEffect(() => {
         getTemas()
         if (id !== undefined) {
@@ -135,7 +139,7 @@ function CadastroPost() {
                         
                     </Select>
                     <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
+                    <Button type="submit" variant="contained" >
                         Finalizar
                     </Button>
                 </FormControl>
