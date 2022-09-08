@@ -7,9 +7,9 @@
 .grid-image2 {
   min-height: 100vh;
   background-image: url(../../assets/cadastro.svg) !important;
-  background-size: 30%;
+  background-size: 40%;
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: -17% bottom;
 }
 
 .grid-form form {
@@ -41,12 +41,19 @@
     margin-bottom: 1rem;
     justify-items: center;  
     width: 150px !important;
-    margin-right: 0px !important;
+    margin:  7px 0px !important;
   }
 
   .button-cadastrar {
     margin: 0 auto !important;
     width: 150px !important;
+  }
 
+  .grid-image2 {
+    background-size: 60%;
+  }
+
+  .text-cadastrar {
+    font-size: 2rem !important;
   }
 }

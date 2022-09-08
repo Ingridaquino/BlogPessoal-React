@@ -39,4 +39,8 @@
   .conta {
       font-size: 12px !important;
   }
+
+  .grid-image {
+  background-size: 50%;
+  }
 }
