@@ -28,11 +28,12 @@
 @media(max-width: 878px) {
   .nav-bar {
     padding: 0.677rem !important;
+    justify-content: space-evenly !important;
     /* display: none !important; */
   }
 
   .logo {
-    font-size: 1rem !important;
+    font-size: 1.4rem !important;
   }
 
   .tituloNav {

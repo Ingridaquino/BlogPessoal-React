@@ -31,7 +31,7 @@ export function Navbar() {
             </Typography>
           </Box>
 
-          <Box  display="flex"  className="nav-bar">
+          <Box  display="flex" flexWrap="wrap"  className="nav-bar">
             <Link to="/home" className="text-decorator-none">
               <Box mx={1}  className="cursor">
                 <Typography variant="h6" color="inherit" className="tituloNav">
