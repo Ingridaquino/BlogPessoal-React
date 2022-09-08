@@ -68,9 +68,6 @@ function CadastroUsuario() {
   }
 
 
-
-
-
   return(
 
     <Grid container direction='row' justifyContent='center' alignItems='center' className='grid-image2' >
@@ -91,7 +88,6 @@ function CadastroUsuario() {
               Cadastrar
             </Button>
           </Box>
-        <span className="line-before"></span>
         </form>
       </Grid>
     </Grid>

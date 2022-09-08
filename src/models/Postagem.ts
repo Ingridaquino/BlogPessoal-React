@@ -8,4 +8,4 @@ interface Postagem {
   tema?: Tema | null; // fazendo a relacao das tabelas 
 }
 
-export default Postagem;
+export default Postagem;  

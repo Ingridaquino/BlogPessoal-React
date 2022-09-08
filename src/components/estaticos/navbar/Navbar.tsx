@@ -23,10 +23,10 @@ export function Navbar() {
 
   return (
     <>
-      <AppBar position="static" className="header-container">
-        <Toolbar variant="dense" >
-          <Box className="cursor" paddingX={20} paddingY={3}>
-            <Typography variant="h5" color="inherit" className="logo">
+      <AppBar position="static" className="header-container" >
+        <Toolbar variant="dense"  >
+          <Box className="cursor" paddingX={2} paddingY={4}>
+            <Typography variant="h5" color="inherit" className="logo" >
             &lt; Ingrid Aquino /&gt;
             </Typography>
           </Box>
