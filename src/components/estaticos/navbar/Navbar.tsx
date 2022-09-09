@@ -30,6 +30,8 @@ export function Navbar() {
 
   let navBarComponent;
 
+  
+    // o navBar so irá aparecer se o usuario estiver logado
   if(token !== ""){
       navBarComponent = <AppBar position="static" className="header-container" >
       <Toolbar variant="dense" className="header-container" >
