@@ -10,13 +10,18 @@ import {
 } from "@material-ui/core";
 import "./ListaPostagem.css";
 import Postagem from "../../../models/Postagem";
-import useLocalStorage from "react-use-localstorage";
 import { busca } from "../../../services/Services";
+import { useSelector } from "react-redux";
+import { TokenState } from "../../../store/tokens/tokensReducer";
 
 function ListaPostagem() {
   const [postagem, setPostagem] = useState<Postagem[]>([]);
 
-  const [token, setToken] = useLocalStorage('token');
+    //substituiu o useLocalStorage
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+      (state) => state.tokens
+    );
+
 
   let navigate = useNavigate();
 

@@ -2,11 +2,13 @@ import { Button, Grid, TextField, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
 
 import { ChangeEvent, useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import useLocalStorage from "react-use-localstorage";
+
 
 import UserLogin from "../../models/UserLogin";
 import { login } from "../../services/Services";
+import { addToken } from "../../store/tokens/actions";
 import "./Login.css";
 
 function Login() {
@@ -15,8 +17,10 @@ function Login() {
      // se o login estiver ok
      let navigate = useNavigate()
 
-     // hooks que vão manipular o nosso Local Storage para gravar o Token
-     const [token, setToken] = useLocalStorage('token')
+     const [token, setToken] = useState('')
+     //irá substituir o useLocalStorage
+
+    const dispath = useDispatch();
 
   // irá armazenar os usuarios logado
 // useState define como uma determinada variavel será inicializada quando o Comp. for renderizado
@@ -39,6 +43,7 @@ function Login() {
 
       useEffect(() => {
           if(token !== '') {
+            dispath(addToken(token))
             navigate('/home')
           }
       },[token])
