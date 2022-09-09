@@ -8,7 +8,7 @@ import React, { useEffect } from "react";
 import "./Home.css";
 import TabPostagem from "../../components/postagens/tabPostagens/TabPostagem";
 import ModalPostagem from "../../components/postagens/modalPostagem/ModalPostagem";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { useSelector } from "react-redux";
 import { TokenState } from "../../store/tokens/tokensReducer";
@@ -64,9 +64,12 @@ function Home() {
             <Box marginRight={2} className="modalPost">
               <ModalPostagem />
             </Box>
-            <Button variant="outlined" className="button-box">
-              Ver Postagens
-            </Button>
+
+            <Link to="posts">
+              <Button variant="outlined" className="button-box">
+                Ver Postagens
+              </Button>
+            </Link>
           </Box>
  
         </Grid>
