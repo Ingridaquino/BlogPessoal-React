@@ -1,11 +1,13 @@
 .box-grid {
   background-color: var(--blue-900)!important;
+}
 
+.boxHome {
+  padding: 1rem !important;
 }
 
 .typography {
-  color: var(--white);
-  font-weight: bold;
+  color: var(--white) !important;
 }
 
 .button-box {
@@ -19,5 +21,26 @@
   margin-top: 1rem !important;
   border-color: var(--blue-700)!important;
   color: var(--white) !important;
-
 }
+
+.imagemHome {
+  height: 90%;
+  width: 90%;
+}
+
+
+@media(max-width: 760px) {
+  .boxHome {
+    padding: 1.4rem !important;
+  }
+
+  .boxHome .typography {
+    font-size: 1.3rem !important;
+  }
+  
+  .button-box {
+    width: 200px !important;
+  }
+}
+
+

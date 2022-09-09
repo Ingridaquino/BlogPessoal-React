@@ -1,6 +1,6 @@
 import { Typography } from "@material-ui/core";
 import { Box, Button, Grid } from "@mui/material";
-import People from "../../assets/people1.svg";
+import People from "../../assets/people3.svg";
 
 // Importacao diferente do video
 import React, { useEffect } from "react";
@@ -34,20 +34,20 @@ function Home() {
         className="box-grid"
       >
         <Grid alignItems="center" item xs={6}>
-          <Box paddingX={20}>
+          <Box className="boxHome">
             <Typography
-              variant="h3"
+              variant="h4"
               gutterBottom
-              component="h3"
+              component="h4"
               align="center"
               className="typography"
             >
               Seja bem vindo(a)!
             </Typography>
             <Typography
-              variant="h5"
+              variant="h6"
               gutterBottom
-              component="h5"
+              component="h6"
               align="center"
               className="typography"
             >
@@ -65,8 +65,8 @@ function Home() {
  
         </Grid>
         
-        <Grid item xs={6}>
-          <img src={People} alt="" width="500px" height="500px" />
+        <Grid item xs={4}>
+          <img src={People} alt="" className="imagemHome" />
         </Grid>
         
       </Grid>
