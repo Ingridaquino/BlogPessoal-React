@@ -7,6 +7,8 @@ import {Box, Card, CardActions, CardContent, Button, Typography} from '@material
 import './DeletarTema.css';
 import { buscaId, deleteId } from '../../../services/Services';
 import Tema from '../../../models/Tema';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 
 function DeletarTema() {
@@ -17,7 +19,11 @@ function DeletarTema() {
   //serve para capturar parametros enviados por uma url
   const { id } = useParams<{id: string}>();
 
-  const [token, setToken] = useLocalStorage('token');
+    //substituiu o useLocalStorage
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+      (state) => state.tokens
+    );
+
 
   //para cadastrar os temas
   const [tema, setTema] = useState<Tema>();
