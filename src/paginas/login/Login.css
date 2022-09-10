@@ -28,6 +28,7 @@
 
 .box-form {
   margin-top: 4rem !important;
+  padding: 0rem  10rem !important;
 }
 
 .color-text {
@@ -41,10 +42,15 @@
   }
 
   .grid-image {
-  background-size: 60%;
+    background-size: 60%;
   }
   
   .enter {
     font-size: 2rem !important;
+  }
+
+  .button-login {
+    width: 70px;
+    font-size: 2rem;
   }
 }

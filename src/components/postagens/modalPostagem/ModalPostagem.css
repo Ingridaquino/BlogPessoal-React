@@ -13,8 +13,8 @@
 
 @media(max-width: 760px) {
   .btnModal {
-    width: 100px !important;
-    padding: 3rem !important;
+    /* width: 100px !important;
+    padding: 3rem !important; */
     margin-bottom: 1rem !important;
   }
 }

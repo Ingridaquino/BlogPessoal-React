@@ -7,7 +7,7 @@
 }
 
 .boxHome {
-  padding: 7rem !important;
+  padding: 8rem 0 4rem 0!important;
 }
 
 .typography {
@@ -25,13 +25,13 @@
 
 
 
-@media(max-width: 760px) {
+@media(max-width: 960px) {
   .box-grid{
-    background-size: 60%;
+    background-size: 35%;
   }
 
   .boxHome {
-    padding: 2rem !important;
+    padding: 7rem  0 2rem  0!important;
   }
 
   .boxHome .typography {
@@ -40,11 +40,16 @@
   }
 
   .button-box{
-    width: 100px !important;
-    padding: 3rem !important;
     margin-bottom: 1rem !important;
   }
-
+  
 }
 
 
+@media(max-width: 560px) {
+  .box-grid{
+    background-size: 55%;
+   background-position: 10% 3%;
+
+  }
+}

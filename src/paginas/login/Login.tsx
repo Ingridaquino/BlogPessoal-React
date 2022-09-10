@@ -65,9 +65,9 @@ function Login() {
 
 
   return (
-     <Grid container direction="row" justifyContent="center" alignItems="center" className="grid-image" sm={12} xs={12}> 
-       <Grid alignItems="center"  md={8} sm={9} xs={12} >
-          <Box paddingX={20} className="box-form">
+     <Grid container direction="row" justifyContent="center" alignItems="center" className="grid-image" > 
+       <Grid alignItems="center"  md={6} sm={9} xs={12} >
+          <Box className="box-form">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" gutterBottom component="h3" className="text-enter enter"> Entrar </Typography>
                       {/* VALUE={userLogin.usuario} (como se estivesse vinculando o model com o input) e no onchange  */}
