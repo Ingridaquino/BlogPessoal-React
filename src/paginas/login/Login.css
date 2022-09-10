@@ -20,7 +20,7 @@
   min-height: 100vh;
   background-position: center;
   background-image: url(../../assets/login.svg) !important;
-  background-size: 30%;
+  background-size: 38%;
   background-repeat: no-repeat;
   background-position: left bottom;
   /* background-color: var(--blue-700) !important; */
@@ -41,6 +41,10 @@
   }
 
   .grid-image {
-  background-size: 50%;
+  background-size: 60%;
+  }
+  
+  .enter {
+    font-size: 2rem !important;
   }
 }

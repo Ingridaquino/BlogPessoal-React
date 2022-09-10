@@ -1,6 +1,6 @@
 import { Typography } from "@material-ui/core";
 import { Box, Button, Grid } from "@mui/material";
-import People from "../../assets/people3.svg";
+
 
 // Importacao diferente do video
 import React, { useEffect } from "react";
@@ -34,54 +34,53 @@ function Home() {
     <>
       <Grid
         container
+        flexWrap="wrap"
         direction="row"
         justifyContent="center"
         alignItems="center"
         className="box-grid"
       >
-        <Grid alignItems="center" item xs={6}>
-          <Box className="boxHome">
-            <Typography
-              variant="h4"
-              gutterBottom
-              component="h4"
-              align="center"
-              className="typography"
-            >
+      <Grid alignItems="center" item xs={6}>
+        <Box className="boxHome" >
+          <Typography
+            variant="h4"
+            gutterBottom
+            component="h4"
+            align="center"
+            className="typography"
+          >
               Seja bem vindo(a)!
-            </Typography>
-            <Typography
-              variant="h6"
-              gutterBottom
-              component="h6"
-              align="center"
-              className="typography"
-            >
-              expresse aqui os seus pensamentos e opiniões!
-            </Typography>
-          </Box>
-          <Box display="flex" justifyContent="center">
-            <Box marginRight={2} className="modalPost">
-              <ModalPostagem />
-            </Box>
+        </Typography>
+        <Typography
+          variant="h6"
+          gutterBottom
+          component="h6"
+          align="center"
+          className="typography"
+        >
+          expresse aqui os seus pensamentos e opiniões!
+        </Typography>
+      </Box>
 
-            <Link to="posts">
-              <Button variant="outlined" className="button-box">
-                Ver Postagens
-              </Button>
-            </Link>
-          </Box>
- 
-        </Grid>
-        
-        <Grid item xs={4}>
-          <img src={People} alt="" className="imagemHome" />
-        </Grid>
-        
+      <Box display="flex" justifyContent="center">
+        <Box marginRight={2} className="modalPost">
+          <ModalPostagem />
+        </Box>
+
+        <Link to="/posts" className="text-decorator-none">
+          <Button variant="outlined" className="button-box">
+            Ver Postagens
+          </Button>
+        </Link>
+      </Box>
       </Grid>
-        <Grid xs={12} style={{ backgroundColor: "white" }}>
+      
+      
+      <Grid xs={12} style={{ backgroundColor: "white" }}>
           <TabPostagem />
         </Grid>
+      </Grid>
+      
 
     </>
   );

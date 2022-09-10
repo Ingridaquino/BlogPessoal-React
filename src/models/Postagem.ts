@@ -5,7 +5,7 @@ interface Postagem {
   id: number;
   titulo: string;
   texto: string;
-  // data: string;
+  data: string;
   tema?: Tema | null; // fazendo a relacao das tabelas 
   usuario?: User | null;
 }

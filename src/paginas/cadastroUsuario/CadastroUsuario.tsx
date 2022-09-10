@@ -71,7 +71,7 @@ function CadastroUsuario() {
   return(
 
     <Grid container direction='row' justifyContent='center' alignItems='center' className='grid-image2' xs={12} >
-      <Grid alignItems='center' className='grid-form' xs={12} sm={10} >
+      <Grid alignItems='center' className='grid-form' xs={11} sm={7} >
         <form onSubmit={onSubmit}>
           <Typography variant="h3" gutterBottom component="h3" className="text-cadastrar"> Cadastrar </Typography>
           <TextField  value={user.nome} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="nome" label="nome" variant="outlined"  type='name' name="nome" margin="normal" fullWidth/>

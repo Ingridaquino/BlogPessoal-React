@@ -45,6 +45,7 @@ function CadastroPost() {
         id: 0,
         titulo: '',
         texto: '',
+        data: '',
         tema: null,
         usuario: {
             id: 1,

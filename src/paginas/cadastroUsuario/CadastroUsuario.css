@@ -5,15 +5,15 @@
 }
 
 .grid-image2 {
-  min-height: 100vh;
+  /* min-height: 90vh; */
   background-image: url(../../assets/cadastro.svg) !important;
   background-size: 40%;
   background-repeat: no-repeat;
-  background-position: -17% bottom;
+  background-position: -6% bottom;
 }
 
 .grid-form form {
-  padding: 10rem !important;
+  padding: 6rem  10rem !important;
 }
 
 
@@ -36,24 +36,32 @@
 
 
 
-@media(max-width: 676px) {
+@media(max-width: 1200px) {
   .button-canc {
-    margin-bottom: 1rem;
     justify-items: center;  
-    width: 150px !important;
-    margin:  7px 0px !important;
+    margin: 7px 10px !important;
   }
 
   .button-cadastrar {
     margin: 0 auto !important;
-    width: 150px !important;
   }
 
   .grid-image2 {
-    background-size: 60%;
+    background-size: 40%;
+    background-position: -10% bottom;
   }
 
   .text-cadastrar {
     font-size: 2rem !important;
+  }
+
+  .grid-form form {
+    padding: 5rem  4rem !important;
+  }
+}
+
+@media(max-width: 870px) {
+  .grid-image2 {
+    background-size: 55%;
   }
 }

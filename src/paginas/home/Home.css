@@ -1,9 +1,13 @@
 .box-grid {
   background-color: var(--blue-900)!important;
+  background-image: url(../../assets/people1.svg) !important;
+  background-size: 30%;
+  background-position: 12% top;
+  background-repeat: no-repeat;
 }
 
 .boxHome {
-  padding: 1rem !important;
+  padding: 7rem !important;
 }
 
 .typography {
@@ -14,33 +18,33 @@
   border-color: var(--blue-700)!important;
   background-color: transparent !important;
   color: var(--white)!important;
-  margin-top: 1rem !important;
+  margin-bottom: 2rem !important;
+  width: 200px !important;
+  height: 40px !important;
 }
 
-.modalPost {
-  margin-top: 1rem !important;
-  border-color: var(--blue-700)!important;
-  color: var(--white) !important;
-}
-
-.imagemHome {
-  height: 90%;
-  width: 90%;
-}
 
 
 @media(max-width: 760px) {
+  .box-grid{
+    background-size: 60%;
+  }
+
   .boxHome {
-    padding: 1.4rem !important;
+    padding: 2rem !important;
   }
 
   .boxHome .typography {
     font-size: 1.3rem !important;
+    text-align: center;
   }
-  
-  .button-box {
-    width: 200px !important;
+
+  .button-box{
+    width: 100px !important;
+    padding: 3rem !important;
+    margin-bottom: 1rem !important;
   }
+
 }
 
 
