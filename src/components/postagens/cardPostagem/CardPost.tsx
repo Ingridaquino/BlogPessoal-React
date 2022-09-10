@@ -3,6 +3,8 @@ import { Box } from '@mui/material'
 import { Link } from 'react-router-dom'
 import Postagem from '../../../models/Postagem';
 
+import './CardPost.css';
+
 interface CardProps{
   objetoPost: Postagem
 }
@@ -13,20 +15,20 @@ function  CardPost({ objetoPost }: CardProps) {
   return (
     <Box m={2}>
           <Card variant="outlined">
-            <CardContent>
-              <Typography color="textSecondary" gutterBottom>
-                Postagens
-              </Typography>
-              <Typography variant="h5" component="h2">
+            <CardContent className='cardContent'>
+              <Typography variant="h5" component="h5" className='titlePost'>
                 {objetoPost.titulo}
-              </Typography>
-              <Typography variant="body2" component="p">
-               {objetoPost.texto}
               </Typography>
               <Typography variant="body2" component="p">
                 {objetoPost.tema?.descricao}
               </Typography>
               <Typography variant="body2" component="p">
+               {objetoPost.texto}
+              </Typography>
+              <Typography  gutterBottom className='post'>
+                Postagens
+              </Typography>
+              <Typography variant="body2" component="p" className='data'>
                   {novaData.format(new Date(objetoPost.data))}
               </Typography>
             </CardContent>
@@ -35,10 +37,9 @@ function  CardPost({ objetoPost }: CardProps) {
                 <Link to={`/formularioPostagem/${objetoPost.id}`} className="text-decorator-none">
                   <Box mx={1}>
                     <Button
+                      className="btnAtualizar"
                       variant="contained"
-                      className="marginLeft"
                       size="small"
-                      color="primary"
                     >
                       atualizar
                     </Button>

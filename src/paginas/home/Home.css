@@ -25,9 +25,12 @@
 
 
 
-@media(max-width: 960px) {
+@media(max-width: 660px) {
   .box-grid{
-    background-size: 35%;
+    background-image: url(../../assets/people2.svg) !important;
+    background-size: 85%;
+    background-position: 60% -5% ;
+    background-repeat: no-repeat;
   }
 
   .boxHome {
@@ -48,8 +51,7 @@
 
 @media(max-width: 560px) {
   .box-grid{
-    background-size: 55%;
-   background-position: 10% 3%;
-
+    background-size: 100%;
+    background-position: 60% 2% ;
   }
 }
