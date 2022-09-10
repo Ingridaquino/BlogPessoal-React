@@ -16,6 +16,12 @@ function  CardPost({ objetoPost }: CardProps) {
     <Box m={2}>
           <Card variant="outlined">
             <CardContent className='cardContent'>
+              <Typography  gutterBottom className='post'>
+                Postagens
+              <Typography variant="body2" component="p" className='data'> 
+                  {novaData.format(new Date(objetoPost.data))}
+              </Typography>
+              </Typography>
               <Typography variant="h5" component="h5" className='titlePost'>
                 {objetoPost.titulo}
               </Typography>
@@ -24,12 +30,6 @@ function  CardPost({ objetoPost }: CardProps) {
               </Typography>
               <Typography variant="body2" component="p">
                {objetoPost.texto}
-              </Typography>
-              <Typography  gutterBottom className='post'>
-                Postagens
-              </Typography>
-              <Typography variant="body2" component="p" className='data'>
-                  {novaData.format(new Date(objetoPost.data))}
               </Typography>
             </CardContent>
             <CardActions>

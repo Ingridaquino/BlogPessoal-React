@@ -2,6 +2,7 @@
   color:var(--blue-900) !important;
   text-align: center !important;
   font-weight: bold !important;
+  font-family: 'Dongle', sans-serif !important;
  }
 
 
@@ -11,6 +12,8 @@
   
   border: 1px solid var(--blue-900 )!important;
   margin: 1rem 0 2rem 0 !important;  
+  font-family: 'Dongle', sans-serif !important;
+
 }
 
 
@@ -31,8 +34,16 @@
   padding: 0rem  10rem !important;
 }
 
+.box-form .MuiTextField-root {
+  color: red !important;
+  font-family: 'Dongle', sans-serif !important;
+
+}
+
 .color-text {
   color: var(--blue-900) !important;
+  font-family: 'Dongle', sans-serif !important;
+
 }
  
 

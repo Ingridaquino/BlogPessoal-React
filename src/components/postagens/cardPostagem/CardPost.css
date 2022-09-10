@@ -1,16 +1,14 @@
 .cardContent {
   border: 2px solid var(--blue-700) !important;
+  font-family: 'Dongle', sans-serif !important;
+
 }
 
 .post, .data  {
   text-align: end;
   font-weight: bold !important;
-  color: rgb(196, 196, 196);
-  font-size: 10px !important;
-}
-
-.post {
-  margin-top: 2rem !important;
+  color: rgb(179, 179, 179);
+  font-size: 8px !important;
 }
 
 .titlePost {
