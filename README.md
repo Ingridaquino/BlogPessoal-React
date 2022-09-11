@@ -2,7 +2,7 @@
 Projeto criado durante o Bootcamp da Generation com objetivo de aprendizado.
 
 ## 📃 Descrição
--- Criação, ediçao e exclusão de pots, temas e usuários.
+- Criação, ediçao e exclusão de pots, temas e usuários.
 
 ## ✨ Conceitos aprendido
 
