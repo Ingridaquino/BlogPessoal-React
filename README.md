@@ -52,9 +52,11 @@ yarn
 * Front-end
 
 4. Inicializando o Back-end
--- Se você tiver um Back-end local, inicie-o antes do React Project
 
-Se você possui um Hosted BackEnd , acesse o arquivo Service e altere o BaseUrl e as rotas, e altere os Models of project de acordo com seu BackEnd
+
+- Se você tiver um Back-end local, inicie-o antes do React Project
+
+- Se você possui um Hosted BackEnd , acesse o arquivo Service e altere o BaseUrl e as rotas, e altere os Models of project de acordo com seu BackEnd
 
 
 ### 👩‍💻 Começando 
