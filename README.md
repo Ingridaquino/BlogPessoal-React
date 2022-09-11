@@ -43,7 +43,7 @@ ou
 yarn
 ````
 
----Verifique se sua internet está estável, pois isso pode demorar um pouco.
+-- Verifique se sua internet está estável, pois isso pode demorar um pouco.
 
 ### 🎊 Como executar o Projeto
  - Este projeto é dividido em duas partes: 
@@ -52,7 +52,7 @@ yarn
 * Front-end
 
 4. Inicializando o Back-end
-Se você tiver um Back-end local, inicie-o antes do React Project
+-- Se você tiver um Back-end local, inicie-o antes do React Project
 
 Se você possui um Hosted BackEnd , acesse o arquivo Service e altere o BaseUrl e as rotas, e altere os Models of project de acordo com seu BackEnd
 
@@ -67,5 +67,5 @@ yarn start
 
 #### 🎨 Licença
 Este projeto está sob licença do MIT.
-Feito com amor por (Ingrid Aquino)[https://www.linkedin.com/in/ingrid-aquino-88a8b9147/] 🤞
+Feito com amor por [Ingrid Aquino](https://www.linkedin.com/in/ingrid-aquino-88a8b9147/) 🤞
 
