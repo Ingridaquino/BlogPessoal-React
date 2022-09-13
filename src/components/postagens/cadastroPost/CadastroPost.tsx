@@ -10,6 +10,8 @@ import { busca, buscaId, post, put } from '../../../services/Services';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 
+import { toast } from 'react-toastify';
+
 function CadastroPost() {
 
     let navigate = useNavigate();
@@ -24,8 +26,17 @@ function CadastroPost() {
     
 
     useEffect(() => {
-        if (token === "") {
-            alert("Você precisa estar logado")
+        if (token === "") {   
+            toast.error('Você precisa estar logado !', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                });
             navigate("/login")
         }
     }, [token])
@@ -107,14 +118,33 @@ function CadastroPost() {
                     'Authorization': token
                 }
             })
-            alert('Postagem atualizada com sucesso');
+                toast.success('🦄 Postagem atualizado com sucesso!', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,// pausar após passar o mouse
+                draggable: true,//mover a notificacao de local 
+                progress: undefined,
+                theme: "dark",
+                });
         } else {
             post(`/postagens`, postagem, setPostagem, {
                 headers: {
                     'Authorization': token
                 }
             })
-            alert('Postagem cadastrada com sucesso');
+
+            toast.success('🦄 Postagem cadastrado com sucesso!', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,// pausar após passar o mouse
+                draggable: true,//mover a notificacao de local 
+                progress: undefined,
+                theme: "dark",
+                });
         }
         back()
 

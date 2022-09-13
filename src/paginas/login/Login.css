@@ -5,7 +5,9 @@
   font-family: 'Kanit', sans-serif !important;
  }
 
-
+ .MuiOutlinedInput-input {
+  padding: 26px 14px !important;
+ }
  .button-login {
   background-color: transparent !important;
   font-weight: bold !important;
@@ -32,11 +34,10 @@
 
 .box-form {
   margin-top: 4rem !important;
-  padding: 0rem  10rem !important;
+  padding: 0rem  6rem !important;
 }
 
 .box-form .MuiTextField-root {
-  color: red !important;
   font-family: 'Dongle', sans-serif !important;
 
 }

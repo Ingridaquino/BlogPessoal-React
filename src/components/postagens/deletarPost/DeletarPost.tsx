@@ -10,6 +10,8 @@ import { buscaId, deleteId } from '../../../services/Services';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 
+import { toast } from 'react-toastify';
+
 function DeletarPost() {
 
   let navigate = useNavigate();
@@ -24,8 +26,17 @@ function DeletarPost() {
   const [postagem, setPostagem] = useState<Postagem>()
 
   useEffect(() => {
-    if (token == "") {
-      alert("Você precisa estar logado")
+    if (token === "") {
+      toast.error('Você precisa estar logado !', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,// pausar após passar o mouse
+        draggable: true,//mover a notificacao de local 
+        progress: undefined,
+        theme: "dark",
+        });
       navigate("/login")
 
     }
@@ -52,7 +63,17 @@ function DeletarPost() {
         'Authorization': token
       }
     });
-    alert('Postagem deletado com sucesso');
+
+    toast.success('🦄 Postagem deletada com sucesso!', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
   }
 
   function nao() {

@@ -9,6 +9,8 @@ import { TokenState } from "../../../store/tokens/tokensReducer";
 
 import CardPost from "../cardPostagem/CardPost";
 
+import { toast } from 'react-toastify';
+
 function ListaPostagem() {
   const [postagem, setPostagem] = useState<Postagem[]>([]);
 
@@ -22,7 +24,17 @@ function ListaPostagem() {
 
   useEffect(() => {
     if (token === "") {
-      alert("Você precisa estar logado!");
+      toast.error('Você precisa estar logado !', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+
       navigate("/login");
     }
   }, [token]);

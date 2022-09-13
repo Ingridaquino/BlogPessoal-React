@@ -9,6 +9,10 @@ import './CadastroUsuario.css';
 import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Services';
 
+
+import { toast } from 'react-toastify';
+
+
 function CadastroUsuario() {
 
   //depois de cadastrar, o usuario será direcionado a uma pag(home)
@@ -59,12 +63,43 @@ function CadastroUsuario() {
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
       e.preventDefault()
       //verificando se as senhas são iguais
-      if(confirmarSenha === user.senha) {
+      if (confirmarSenha === '') {
+        toast.error('Dados inválidos!', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,// pausar após passar o mouse
+          draggable: true,//mover a notificacao de local 
+          progress: undefined,
+          theme: "dark",
+          });
+
+      } else if (confirmarSenha === user.senha) {
         cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
-        alert('Usuário cadastrado com sucesso')
+        toast.success('🦄 Usuário cadastrado com sucesso!', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,// pausar após passar o mouse
+          draggable: true,//mover a notificacao de local 
+          progress: undefined,
+          theme: "dark",
+          });
       } else {
-        alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
+        toast.error('Dados inconsistentes. Favor verificar as informações de cadastro! ', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,// pausar após passar o mouse
+          draggable: true,//mover a notificacao de local 
+          progress: undefined,
+          theme: "dark",
+          });
       }
+
   }
 
 

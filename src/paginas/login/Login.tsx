@@ -11,6 +11,8 @@ import { login } from "../../services/Services";
 import { addToken } from "../../store/tokens/actions";
 import "./Login.css";
 
+import { toast } from 'react-toastify';
+
 function Login() {
 
      // redireciona o usuário para determinada pagina
@@ -54,9 +56,27 @@ function Login() {
 
           try{ // tentativa
               await login(`/usuarios/logar`, userLogin, setToken)
-              alert('Usuário logado com sucesso! ');
+              toast.success('🦄 Usuário logado com sucesso!', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,// pausar após passar o mouse
+                draggable: true,//mover a notificacao de local 
+                progress: undefined,
+                theme: "dark",
+                });
           } catch(error){ // caso de erro, tente esse
-              alert('Usuário não existe. Erro ao logar!!');
+            toast.error('🦄 Usuário não existe. Erro ao logar!!', {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              });
           }
 
       }
