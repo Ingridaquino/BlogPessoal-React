@@ -1,6 +1,8 @@
 .box-pai {
   background-color: var(--blue-900) ;
   height: 160px;
+
+  font-family: 'Kanit', sans-serif !important;
 }
 .color {
   color: var(--white) !important;

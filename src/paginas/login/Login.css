@@ -2,7 +2,7 @@
   color:var(--blue-900) !important;
   text-align: center !important;
   font-weight: bold !important;
-  font-family: 'Dongle', sans-serif !important;
+  font-family: 'Kanit', sans-serif !important;
  }
 
 
@@ -12,8 +12,7 @@
   
   border: 1px solid var(--blue-900 )!important;
   margin: 1rem 0 2rem 0 !important;  
-  font-family: 'Dongle', sans-serif !important;
-
+  font-family: 'Kanit', sans-serif !important;
 }
 
 
@@ -26,7 +25,9 @@
   background-size: 38%;
   background-repeat: no-repeat;
   background-position: left bottom;
-  /* background-color: var(--blue-700) !important; */
+
+
+  font-family: 'Kanit', sans-serif !important;
 }
 
 .box-form {

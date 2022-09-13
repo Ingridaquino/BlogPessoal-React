@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography, Box } from "@material-ui/core";
 
 import './Navbar.css'
 import { Link, useNavigate } from "react-router-dom";
-import useLocalStorage from "react-use-localstorage";
+
 import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/tokensReducer";
 import { addToken } from "../../../store/tokens/actions";

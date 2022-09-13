@@ -2,6 +2,7 @@ import { Button, Card, CardActions, CardContent, Typography } from '@material-ui
 import { Box } from '@mui/material'
 import { Link } from 'react-router-dom'
 import Postagem from '../../../models/Postagem';
+import TabPostagem from '../tabPostagens/TabPostagem';
 
 import './CardPost.css';
 
@@ -13,8 +14,8 @@ const novaData = new Intl.DateTimeFormat('pt-BR')
 
 function  CardPost({ objetoPost }: CardProps) {
   return (
-    <Box m={2}>
-          <Card variant="outlined">
+    <Box m={2} key={objetoPost.id}>
+          <Card variant="outlined" className='cardOutlined'>
             <CardContent className='cardContent'>
               <Typography  gutterBottom className='post'>
                 Postagens
@@ -22,17 +23,17 @@ function  CardPost({ objetoPost }: CardProps) {
                   {novaData.format(new Date(objetoPost.data))}
               </Typography>
               </Typography>
+              <Typography variant="body2" component="p" className='tema'>
+                {objetoPost.tema?.descricao}
+              </Typography>
               <Typography variant="h5" component="h5" className='titlePost'>
                 {objetoPost.titulo}
               </Typography>
-              <Typography variant="body2" component="p">
-                {objetoPost.tema?.descricao}
-              </Typography>
-              <Typography variant="body2" component="p">
+              <Typography variant="body2" component="p" className='text'>
                {objetoPost.texto}
               </Typography>
             </CardContent>
-            <CardActions>
+            <CardActions className='cardActions'>
               <Box display="flex" justifyContent="center" mb={1.5}>
                 <Link to={`/formularioPostagem/${objetoPost.id}`} className="text-decorator-none">
                   <Box mx={1}>
@@ -47,7 +48,7 @@ function  CardPost({ objetoPost }: CardProps) {
                 </Link>
                 <Link to={`/deletarPostagem/${objetoPost.id}`} className="text-decorator-none">
                   <Box mx={1}>
-                    <Button variant="contained" size="small" color="secondary">
+                    <Button variant="contained" size="small" className='btnDelete'>
                       deletar
                     </Button>
                   </Box>
