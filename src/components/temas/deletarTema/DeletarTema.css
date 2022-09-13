@@ -1,0 +1,13 @@
+.btnSim {
+  background-color: var(--blue-700) !important;
+  font-size: 12px !important;
+  color: var(--white) !important;
+  border: none;
+}
+
+.btnNao {
+  background-color: var(--red-900) !important;
+  font-size: 12px !important;
+  color: var(--white) !important;
+  border: none;
+}

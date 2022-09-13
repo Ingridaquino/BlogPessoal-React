@@ -1,9 +1,7 @@
-.topo{
-  margin-top: 20px;
-  padding: 2rem 4rem !important;
-
-  font-family: 'Kanit', sans-serif !important;
+.topo {
+  margin-top: 10rem !important;
 }
+
 
 .btnFinalizar {
   background-color: var(--blue-900) !important;

@@ -1,0 +1,52 @@
+.cardOutlined{
+  width: 100% !important;
+
+}
+
+.cardContent, .cardActions  {
+  border: 2px solid var(--blue-700) !important;
+  font-family: 'Kanit', sans-serif !important;
+}
+.cardActions {
+  margin-top: 0.100rem !important;
+  padding: 1rem 0 !important;
+}
+.tema {
+  font-weight: bold !important;
+  color: rgb(179, 179, 179);
+  font-size: 10px !important;
+  margin-bottom: 0.356rem !important;
+
+}
+
+.post, .data{
+  text-align: end;
+  font-weight: bold !important;
+  color: rgb(179, 179, 179);
+  font-size: 8px !important;
+}
+
+.titlePost {
+  color: var(--blue-900);
+  font-weight: 700 !important;
+}
+
+.text {
+  font-size: 12px !important;
+  text-align: justify !important;
+
+}
+
+.btnAtualizar {
+  background-color: var(--blue-700) !important;
+  font-size: 12px !important;
+  color: var(--white) !important;
+  border: none;
+}
+
+.btnDelete {
+  background-color: var(--red-900) !important;
+  font-size: 12px !important;
+  color: var(--white) !important;
+  border: none;
+}

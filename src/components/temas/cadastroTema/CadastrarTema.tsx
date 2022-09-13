@@ -3,6 +3,7 @@ import { Container, Typography, TextField, Button } from "@material-ui/core";
 
 import Tema from '../../../models/Tema';
 import { buscaId, post, put } from '../../../services/Services';
+import './CadastrarTema.css';
 
 import { useNavigate, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -80,7 +81,7 @@ const token = useSelector<TokenState, TokenState["tokens"]>(
 
         // cadastrar e atualizar um tema, 
         if (id !== undefined) {      
-            //Try: tenta executar a atualição
+            //Try: tenta executar a atualização
             try {
                await put(`/temas`, tema, setTema, {
                     headers: {
@@ -160,9 +161,9 @@ const token = useSelector<TokenState, TokenState["tokens"]>(
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
-                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" color="primary">
+                <Typography variant="h3" component="h3" align="center" className='title'> Cadastrar tema </Typography>
+                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descricao" variant="outlined" name="Descricao" margin="normal" fullWidth />
+                <Button type="submit" variant="contained" className='btnFinalizar'>
                     Finalizar
                 </Button>
             </form>
