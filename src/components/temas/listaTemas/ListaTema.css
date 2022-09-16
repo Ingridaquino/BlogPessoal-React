@@ -1,12 +1,12 @@
 .cardOutlined{
   width: 100% !important;
-
 }
 
 .cardContent, .cardActions  {
   border: 2px solid var(--blue-700) !important;
   font-family: 'Kanit', sans-serif !important;
 }
+
 .cardActions {
   margin-top: 0.100rem !important;
   padding: 1rem 0 !important;

@@ -162,7 +162,7 @@ const token = useSelector<TokenState, TokenState["tokens"]>(
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" component="h3" align="center" className='title'> Cadastrar tema </Typography>
-                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descricao" variant="outlined" name="Descricao" margin="normal" fullWidth />
+                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
                 <Button type="submit" variant="contained" className='btnFinalizar'>
                     Finalizar
                 </Button>
