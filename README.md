@@ -1,6 +1,8 @@
 # 💻 Blog Pessoal React 
 Projeto criado durante o Bootcamp da Generation com objetivo de aprendizado.
 
+### Link https://blog-pessoal-react.netlify.app/
+
 ## 📃 Descrição
 - Criação, ediçao e exclusão de pots, temas e usuários.
 
